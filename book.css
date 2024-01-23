@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    background:linear-gradient( rgba(186, 210, 223,0.9), rgba(201, 145, 201,0.2)) ;
+}
+
+h1{
+    text-align: center;
+    margin-top: 40px !important;
+}
+nav{
+    text-align: center;
+}
+nav li{
+    display: inline;
+    border-right:1px solid black ;
+    padding-right:7px;
+}
+nav .different{
+    border-right: none;
+}
+
+.search{
+    height: auto;
+    margin: 30px auto 0 auto;
+    display: flex;
+}
+
+.search input{
+    width:80%;
+    margin-right: 10px;
+    border:2px solid #555;
+}
+
+.search button{
+    width:20%;
+    color:white;
+}
+
+.search,
+.book-lists {
+    width: 60%;
+}
+
+.book-lists {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.author {
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

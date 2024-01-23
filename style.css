@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color:antiquewhite;
+    font-family: 'Poppins', sans-serif;;
+
+}
+
+a {
+    font-size: 20px;
+    color:brown;
+}
+
+
+h2{
+    border:2px solid blue;
+    margin-top: 100px;
+    padding-left:20px
+}
+
+.custom{
+    color:coral;
+}
+
+p{
+    color: darkgreen;
+    font-size: 20px;
+}
+
+#change-color{
+    color:black;
+}
+
+img{
+    height:200px;
+}
+.about-heading{
+    margin-top:0 ;
+}
+.para{
+   background-color: aqua;
+   width:50%;
+   padding:30px
+}
+
+input,select,textarea{
+    width:300px;
+    height:40px;
+    margin-bottom: 20px;
+}
+
+.para > h2{
+    color:red;
+
+}
+
+ul li {
+    list-style-type:disc;
+    font-size:20px;
+}
+
+.flex-item{
+    width:23%;
+    height:300px;
+    border-radius: 30px;
+    margin-bottom:40px;
+    background-position: center;
+    background-size:cover ;
+    box-shadow:10px 10px  50px rgb(179, 175, 175) ;
+    padding-top:20px;
+}
+.flex-item p{
+    background-color: chocolate;
+    color:#fff;
+    text-align: center;
+}
+
+.parent-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+}
+
+.gallery-header{
+    text-align: center;
+    font-size: 70px;
+}
+
+.first{
+    background-image: url("./cute.jpeg");
+}
+
+.second{
+    background-image: url("https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.third{
+    background-image: url("https://media-be.chewy.com/wp-content/uploads/2022/09/27095535/cute-dogs-pembroke-welsh-corgi.jpg");
+}
+
+.fourth{
+    background-image: url("https://hips.hearstapps.com/goodhousekeeping/assets/17/30/pembroke-welsh-corgi.jpg");
+}
+.fifth{
+    background-image: url("https://www.petlandflorida.com/wp-content/uploads/2019/09/Petland_Florida_Cavalier_King_Charles_Spaniel_puppy.jpg");
+}
+.sixth{
+    background-image: url("https://i.pinimg.com/736x/54/36/95/54369563e20e94dcab5fc7f40cf7e8d6.jpg");
+}
+.seventh{
+    background-image: url("https://plus.unsplash.com/premium_photo-1665952050053-31ac47c6ff4b?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y3V0ZSUyMGRvZ3xlbnwwfHwwfHx8MA%3D%3D");
+}
+
+.eighth{
+    background-image: url("https://w0.peakpx.com/wallpaper/209/34/HD-wallpaper-cute-puppy-dog-dogs-puppies-sweet-white-thumbnail.jpg");
+}
