@@ -116,3 +116,79 @@ const subtract = (num1, num2) => {
   result = num1 - num2;
   console.log(result);
 };
+
+/* SESSION 2 */
+// creating an object
+const person = {
+  name: "Shakirah Usman",
+  age: 23,
+  likes: "Pizza",
+  getName: function () {
+    return this.name;
+  },
+};
+
+// dot notation
+console.log(person.name);
+
+// bracket notation
+console.log(person["age"]);
+
+console.log(person.getName());
+
+person.age = 25;
+
+console.log(person.age);
+
+const personA = {
+  firstName: "Monique",
+  likes: "pizza",
+};
+
+const personB = personA;
+
+//const personB = { ...personA }; // spread operator
+
+console.log("Before");
+console.log(personA.firstName);
+console.log(personB.firstName);
+
+personA.firstName = "Stacy";
+
+console.log("After");
+console.log(personA.firstName);
+console.log(personB.firstName);
+
+person.getName();
+console.log(person.age);
+
+let add = a + b;
+let subtraction = a - b;
+let multiplication = a * b;
+let division = a / b;
+let modulus = a % b;
+let exponentiation = a ** b;
+
+// let increment = a++;
+
+// let decrement = b--;
+// ++a (pre-increment) - increment the value of a and returns it
+// a++ (post-increment) - returns the current value of a and then increments it
+
+console.log("Addition of a and b is: " + add);
+console.log("Subtraction of a and b is: " + subtraction);
+console.log("Multiplication of a and b is: " + multiplication);
+console.log("Division of a and b is: " + division);
+console.log("The remainder of a modulus b is: " + modulus);
+console.log("Exponentiation of a and b is:" + exponentiation);
+console.log("The increment of a is: " + ++a);
+console.log("The decrement of b is: " + --b);
+
+console.log(2 + Number("2"));
+
+//"=" // assignment operator
+
+console.log(2 == "2"); // checking the values
+console.log(2 === "2"); // checking both values and types.
+//"==" //
+//"===" // strict equality sign
