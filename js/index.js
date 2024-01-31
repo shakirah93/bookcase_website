@@ -192,3 +192,118 @@ console.log(2 == "2"); // checking the values
 console.log(2 === "2"); // checking both values and types.
 //"==" //
 //"===" // strict equality sign
+
+const apples = "apples";
+const oranges = "oranges";
+
+const isEqual = apples === oranges;
+
+const isNotEqual = apples !== oranges;
+
+console.log("Are apples and oranges the same? " + isEqual);
+console.log("Apples and oranges are not the same: " + isNotEqual);
+
+const volunteers = 20;
+const students = 24;
+const pizzas = 25;
+
+const moreStudents = students > volunteers;
+console.log("Are there more students than volunteers? " + moreStudents);
+
+const lessStudents = students < pizzas;
+console.log("Are there fewer students than pizzas? " + lessStudents);
+
+const enoughPizzas = volunteers + students < pizzas;
+console.log("Do we have enough pizzas for everybody? " + enoughPizzas);
+
+const myAge = 18;
+const drivingAge = 18;
+
+if (myAge >= drivingAge) {
+  // runs when the condition is true
+  console.log("You are eligible to drive");
+} else {
+  // runs when the condition is false
+  console.log("You are not eligible to drive");
+}
+
+// ternary operator
+myAge >= drivingAge
+  ? console.log("You are eligible to drive")
+  : console.log("You are not eligible to drive");
+
+// check if a number is positive or negative
+let num = 200;
+
+if (num > 0) {
+  console.log("Number is positive");
+} else if (num === 0) {
+  console.log("Number is 0");
+} else {
+  console.log("Number is negative");
+}
+
+// print grades
+
+const score = 75;
+
+if (score > 90) {
+  console.log("A");
+} else if (score > 80) {
+  console.log("A");
+} else if (score > 70) {
+  console.log("B");
+} else if (score > 60) {
+  console.log("C");
+} else if (score > 50) {
+  console.log("D");
+} else if (score > 40) {
+  console.log("E");
+} else {
+  console.log("F");
+}
+
+// get the day of the week (0 - 6)
+let dayNumber = new Date().getDay(); // 3
+console.log(new Date());
+switch (dayNumber) {
+  case 0:
+    console.log("Today is Sunday");
+    break;
+  case 1:
+    console.log("Today is Monday");
+    break;
+  case 2:
+    console.log("Today is Tuesday");
+    break;
+  case 3:
+    console.log("Today is Wednesday");
+    break;
+  case 4:
+    console.log("Today is Thursday");
+    break;
+  case 5:
+    console.log("Today is Friday");
+    break;
+  case 6:
+    console.log("Today is Saturday");
+    break;
+  default:
+    console.log("Unknown value");
+}
+
+let fruits = "Pear";
+
+switch (fruits) {
+  case "Banana":
+    console.log("Hello");
+    break;
+  case "Apple":
+    console.log("Welcome");
+    break;
+  case "Orange":
+    console.log("Goodbye");
+    break;
+  default:
+    console.log("I don't know you");
+}
