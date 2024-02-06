@@ -126,3 +126,71 @@ console.log(numbers.sort(sortNumbersAscending));
 
 // sort in descending order
 console.log(numbers.sort(sortNumbersAscending).reverse());
+
+const fruitAndVeg = [
+  "apple",
+  "orange",
+  "banana",
+  "kiwi",
+  "avocado",
+  "celery",
+  "aubergine",
+];
+
+const noAvocados = [];
+
+// starting point of the while loop
+let i = 0;
+
+while (i < fruitAndVeg.length) {
+  if (fruitAndVeg[i] !== "avocado") {
+    noAvocados.push(fruitAndVeg[i]);
+  }
+  i = i + 1; // increment
+  console.log(i);
+}
+
+console.log(noAvocados);
+
+/* 
+1st iteration, i=0, 0 < 7
+"apple" !== "avocado",
+result = noAvocados = ["apple"];
+
+2nd iteration, i=1 , 1<7
+"orange" !== "avocado"
+result = noAvocados = ["apple", "orange"];
+
+3rd iteration, i=2, 2<7
+"banana" !== "avocado"
+result = noAvocados = ["apple", "orange", "banana"];
+
+4th iteration, i=3, 3<7
+"kiwi" !== "avocado"
+result = noAvocados = ["apple", "orange", "banana", "kiwi"];
+
+5th iteration, i=4, 4<7
+"avocado" !== "avocado"
+result = noAvocados = ["apple", "orange", "banana", "kiwi"];
+
+6th
+
+*/
+
+// using the filter method
+
+const noAvocados_2 = fruitAndVeg.filter((fruit) => !fruit.includes("avocado"));
+console.log(noAvocados_2);
+
+// map method
+const arrayOfRandomNumbers = [3, 7, 80, 20, 2];
+
+const numbersDoubled = arrayOfRandomNumbers.map((num) => num * 2);
+console.log(numbersDoubled);
+
+// chaining methods
+const numbersDoubledAndGreaterThan10 = arrayOfRandomNumbers
+  .map((num) => num * 2)
+  .filter((num) => num > 10);
+
+console.log(numbersDoubledAndGreaterThan10);
