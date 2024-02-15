@@ -67,13 +67,24 @@ function createListOfFruits(array) {
   const unorderedList = document.createElement("ul");
   /* this loops through the array and create a new "li" element 
    with the array item, then append to the ul element */
-  for (let i = 0; i < array.length; i++) {
+  /*for (let i = 0; i < array.length; i++) {
+    if (array[i].length <= 5) {
+      const listItem = document.createElement("li");
+      const textNode = document.createTextNode(array[i]);
+
+      listItem.appendChild(textNode);
+      unorderedList.appendChild(listItem);
+    }
+  }*/
+
+  array.filter(fruit => fruit.length <= 5) // ["apple"]
+  .map(fruit => {
     const listItem = document.createElement("li");
-    const textNode = document.createTextNode(array[i]);
+    const textNode = document.createTextNode(fruit);
 
     listItem.appendChild(textNode);
     unorderedList.appendChild(listItem);
-  }
+  })
 
   // attaching ul to the div
   listContainer.appendChild(unorderedList);
@@ -143,3 +154,16 @@ createListOfFruits(["Banana", "Apple", "Orange", "Pineapple"]);
   </body>
 
 */
+
+const headingSix = document.createElement("h6");
+
+// add text to the newly created h6 element
+// headingSix.textContent = "This is an heading six element";
+
+// add html element inside the content of the newly created h6 element
+headingSix.innerHTML = "This is an <em>heading six</em> element";
+
+headingSix.style.color = "purple";
+headingSix.style.fontSize = "20px";
+
+document.body.appendChild(headingSix);

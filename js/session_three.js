@@ -107,7 +107,13 @@ console.log(animals.sort());
 console.log(animals.sort().reverse());
 
 const numbers = [1, 5, 3, 19, 20, 45, 6];
-console.log(numbers.sort());
+console.log(numbers.sort()); // 1, 19, 20, 3,45
+
+people = [
+  { name: "Shuri", age: 25 } - a,
+  { name: "Killmonger", age: 30 } - b
+]
+
 
 function sortNumbersAscending(a, b) {
   return a - b;
